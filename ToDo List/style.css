@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+header{
+    width:100%;
+    top:0;
+    position: sticky;
+    z-index:1;
+    background:transparent;
+    background-color: #fdf5f4;
+    
+}
+header .container{
+    height:10vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+.logo{
+    display:flex;
+    align-items:center;
+
+}
+.logo img{
+    width:65px;
+    gap:14px;
+    height:65px;
+    margin-right:40px;
+}
+.logo p{
+    font-family:'Times New Roman', Times, serif;
+font-style:normal;
+    font-size:25px;
+    font-weight:bold;
+    cursor:default;
+    margin-right:400px;
+    color:#AE445A;
+    
+
+}
+a
+{
+    text-decoration: none;
+    color:#522B5B;
+    border: 3px solid black;
+    padding:5px;
+    margin-left:20px;
+    border-radius: 25px;
+    width: 150px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+ul{
+    display:flex;
+    gap:14px;
+    list-style:none;
+}
+li{
+    font-size: 15px;
+
+}
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:14px;
+}
+.main{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-image: url('../assest/b6.jpg');
+display: flex;
+ margin:auto;
+ 
+ background-position: center;
+ background-size: cover;
+ 
+ 
+}
+    
+/*.main img{
+background-image: url('../assest/b6.jpg');
+display: flex;
+ margin:auto;
+ height:100%;
+ background-position: center;
+ background-size: cover;
+    
+} */
+.content{
+    width:100%;
+    height:100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+.content .container{
+    justify-content: center;
+    display: flex;
+    flex-direction:column;
+    width: 250px;
+    margin: 150px;
+    height:100%;
+
+}
+.todo{
+    /*cursor:url('../assest/6.png')6 19,auto;*/
+    display: flex;
+    padding: 10px;
+    margin-left:650px;
+    margin-right: 650px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.todo_value{
+    /*cursor:inherit;*/
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:25px;
+    font-weight: bold;
+    flex-grow:2;
+    color:firebrick;
+    border-bottom: 4px solid  rgb(126, 3, 126);
+}
+.todo_checkbox{
+   /* cursor: inherit;*/
+    padding: 20px;
+}
+.todo:has(.todo_checkbox:checked){
+    color:rgb(2, 2, 2);
+    
+   border-width: 300px;
+    text-decoration: line-through 2px;
+    order:1;
+}
+
